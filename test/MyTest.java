@@ -1,3 +1,5 @@
+import graph.BFS;
+import graph.DFS;
 import greedy.Greedy;
 import lib_use.*;
 import org.junit.Test;
@@ -65,5 +67,13 @@ public class MyTest {
     @Test
     public void test_greedy(){
         Greedy greedy = new Greedy();
+    }
+    @Test
+    public void test_DFS() {
+        DFS dfs = new DFS(5);
+    }
+    @Test
+    public void test_BFS() {
+        BFS bfs = new BFS(5);
     }
 }
