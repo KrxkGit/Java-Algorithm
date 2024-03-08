@@ -10,10 +10,9 @@ public class LRU {
 
     public LRU(int capacity) {
         this.capacity = capacity;
-        this.cache = new LinkedHashMap<>(capacity) {
+        this.cache = new LinkedHashMap<>() {
             @Override
             protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
-                // 改写此函数即可实现
                 return size() > capacity;
             }
         };

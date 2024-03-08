@@ -1,11 +1,16 @@
+import dp.CanJump;
+import dp.DP;
 import graph.BFS;
 import graph.DFS;
+import graph.Dijkstra;
 import greedy.Greedy;
+import leetcode.*;
 import lib_use.*;
 import org.junit.Test;
 import search.Binary_Search;
 import sort.Merge;
 import sort.Quick;
+import strings.KMP;
 
 public class MyTest {
     @Test
@@ -75,5 +80,63 @@ public class MyTest {
     @Test
     public void test_BFS() {
         BFS bfs = new BFS(5);
+    }
+    @Test
+    public void test_DP() {
+        DP dp = new DP();
+    }
+    @Test
+    public void test_lru() {
+        LRU lru = new LRU(4);
+        lru.put(2, 3);
+        lru.put(3,1);
+        lru.put(6,5);
+        lru.put(8,1010);
+        lru.put(5, 29);
+        System.out.println(lru.get(3)); // 1
+        System.out.println(lru.get(2)); // -1
+        lru.put(33, 2);
+        System.out.println(lru.get(3)); // 结果应该是 1， 但输出 -1。 说明是根据插入顺序顺序删除的
+        System.out.println(lru.get(6));
+    }
+    @Test
+    public void test_kmp() {
+        KMP kmp = new KMP();
+    }
+    @Test
+    public void test_heap() {
+        Heap heap = new Heap();
+    }
+    @Test
+    public void test_dijkstra() {
+        Dijkstra dijkstra = new Dijkstra();
+    }
+    @Test
+    public void test_can_jump() {
+        CanJump canJump = new CanJump();
+    }
+    @Test
+    public void test_slide_win() {
+        SlideWin slideWin = new SlideWin();
+    }
+    @Test
+    public void test_valid_bracket() {
+        ValidBracket validBracket = new ValidBracket();
+    }
+    @Test
+    public void test_merge_intervals() {
+        MergeIntervals mergeIntervals = new MergeIntervals();
+    }
+    @Test
+    public void test_rotate_matrix() {
+        RotateMatrix rotateMatrix = new RotateMatrix();
+    }
+    @Test
+    public void test_Palindrome() {
+        Palindrome palindrome = new Palindrome();
+    }
+    @Test
+    public void test_IslandCount() {
+        IslandCount islandCount = new IslandCount();
     }
 }
