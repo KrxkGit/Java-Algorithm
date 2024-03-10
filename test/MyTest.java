@@ -139,4 +139,8 @@ public class MyTest {
     public void test_IslandCount() {
         IslandCount islandCount = new IslandCount();
     }
+    @Test
+    public void test_merge_array() {
+        MergeArray mergeArray = new MergeArray();
+    }
 }
