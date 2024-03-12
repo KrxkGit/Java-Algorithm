@@ -7,6 +7,7 @@ import greedy.Greedy;
 import leetcode.*;
 import lib_use.*;
 import org.junit.Test;
+import safety.RSA;
 import search.Binary_Search;
 import sort.Merge;
 import sort.Quick;
@@ -142,5 +143,17 @@ public class MyTest {
     @Test
     public void test_merge_array() {
         MergeArray mergeArray = new MergeArray();
+    }
+    @Test
+    public void test_RSA() {
+        RSA rsa = new RSA();
+        Integer t = 78;
+        Integer t_s = rsa.AttachEKey(t);
+        System.out.println(t_s);
+        System.out.println(rsa.AttachDKey(t_s));
+    }
+    @Test
+    public void test_phone_number() {
+        PhoneNumber phoneNumber = new PhoneNumber();
     }
 }
