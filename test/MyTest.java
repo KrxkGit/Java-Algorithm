@@ -13,6 +13,9 @@ import sort.Merge;
 import sort.Quick;
 import strings.KMP;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyTest {
     @Test
     public void test() {
@@ -155,5 +158,17 @@ public class MyTest {
     @Test
     public void test_phone_number() {
         PhoneNumber phoneNumber = new PhoneNumber();
+    }
+    @Test
+    public void test_longestPalindrome() {
+        LongestPalindrome longestPalindrome = new LongestPalindrome();
+        String s = longestPalindrome.longestPalindrome("cbbd");
+        System.out.println(s);
+    }
+    @Test
+    public void test_editDistance() {
+        EditDistance editDistance = new EditDistance();
+        Integer res = editDistance.minDistance("horse", "ros");
+        System.out.println(res);
     }
 }
