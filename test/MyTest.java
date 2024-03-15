@@ -13,9 +13,6 @@ import sort.Merge;
 import sort.Quick;
 import strings.KMP;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MyTest {
     @Test
     public void test() {
@@ -120,8 +117,8 @@ public class MyTest {
         CanJump canJump = new CanJump();
     }
     @Test
-    public void test_slide_win() {
-        SlideWin slideWin = new SlideWin();
+    public void test_minSubArrayLen() {
+        MinSubArrayLen minSubArrayLen = new MinSubArrayLen();
     }
     @Test
     public void test_valid_bracket() {
@@ -170,5 +167,9 @@ public class MyTest {
         EditDistance editDistance = new EditDistance();
         Integer res = editDistance.minDistance("horse", "ros");
         System.out.println(res);
+    }
+    @Test
+    public void test_maximalSquare() {
+//        [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
     }
 }

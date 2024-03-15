@@ -3,6 +3,10 @@ package leetcode;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 双指针与滑动窗口的区别在于：双指针范围是夹逼产生的，而滑动窗口是滑动产生的，滑动相比于夹逼更复杂
+ */
+
 public class Palindrome {
     public Palindrome() {
         System.out.println(isPalindrome("A man, a plan, a canal: Panama"));

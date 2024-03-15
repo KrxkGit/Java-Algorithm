@@ -1,7 +1,7 @@
 package leetcode;
 
-public class SlideWin {
-    public SlideWin() {
+public class MinSubArrayLen {
+    public MinSubArrayLen() {
         int[] nums = {5,1,3,5,10,7,4,9,2,8};
         System.out.println(minSubArrayLen(15, nums));
     }
