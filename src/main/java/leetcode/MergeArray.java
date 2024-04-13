@@ -1,29 +1,30 @@
 package leetcode;
 
 public class MergeArray {
-    private int[] arr1 = new int[]{1,3,4,6,0,0,0,0};
-    private int[] arr2 = new int[]{4,5,6,7};
-    private int m = 4, n = 4;
-    public void Merge() {
-        int p = 7, p1 = 3, p2 = 3;
-        while (p2 >= 0) {
-            if (arr1[p1] >= arr2[p2]) {
-                arr1[p] = arr1[p1];
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int p1 = m - 1, p2 = n - 1, pres = m + n - 1;
+        while (true) {
+            if (pres < 0) {
+                break;
+            }
+            if (p1 < 0) {
+                nums1[pres] = nums2[p2];
+                p2--;
+                pres--;
+                continue;
+            }
+            if (p2 < 0) {
+                break;
+            }
+
+            if (nums1[p1] >= nums2[p2]) {
+                nums1[pres] = nums1[p1];
                 p1--;
             } else {
-                arr1[p] = arr2[p2];
+                nums1[pres] = nums2[p2];
                 p2--;
             }
-            p--;
+            pres--;
         }
-    }
-
-    public MergeArray() {
-        Merge();
-        System.out.println();
-        for (int item : arr1) {
-            System.out.printf("%d ", item);
-        }
-        System.out.println();
     }
 }

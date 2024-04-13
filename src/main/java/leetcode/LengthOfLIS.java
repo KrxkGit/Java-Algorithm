@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-
 public class LengthOfLIS {
     public int lengthOfLIS(int[] nums) {
         if (nums.length <= 1) {

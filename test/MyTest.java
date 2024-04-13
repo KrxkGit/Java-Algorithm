@@ -172,4 +172,9 @@ public class MyTest {
     public void test_maximalSquare() {
 //        [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
     }
+    @Test
+    public void test_IntToRoman() {
+        IntToRoman intToRoman = new IntToRoman();
+        intToRoman.test(1994);
+    }
 }

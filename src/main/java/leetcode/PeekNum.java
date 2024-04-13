@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.util.Map;
-import java.util.PriorityQueue;
-
 public class PeekNum {
     private int[] prefix_sum;
     public int findPeakElement(int[] nums) {
