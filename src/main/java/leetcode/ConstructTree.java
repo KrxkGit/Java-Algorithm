@@ -23,6 +23,12 @@ public class ConstructTree {
         }
     }
 
+    /**
+     * 中序 + 前序
+     * @param preorder
+     * @param inorder
+     * @return
+     */
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         // 终止条件
         if (preorder.length == 0) {
@@ -57,5 +63,4 @@ public class ConstructTree {
         }
         return -1;
     }
-
 }
